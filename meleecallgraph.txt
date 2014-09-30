@@ -52,13 +52,27 @@ shape = "record"
 ];
 
 "node0-1-0" [
-label = "<f0> x803436d4_EntryPointForSettingHIDS?|<f1>|<f2>|<f3>|-1"
+label = "<f0> x803436d4_EntryPointForSettingHIDS?|<f1>Nested in function|<f2>body of|<f3>x803435e4|-1"
 shape = "record"
 ];
 "node0-1-1" [
 label = "<f0> x80344d3c|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|-1"
 shape = "record"
 ];
+
+"node0-1-0-0" [
+label = "<f0> x80335ea8|-1"
+shape = "record"
+];
+"node0-1-0-1" [
+label = "<f0> x80335eb0|-1"
+shape = "record"
+];
+"node0-1-0-2" [
+label = "<f0> x804490c|-1"
+shape = "record"
+];
+
 
 "node0-2-0" [
 label = "<f0> x80003100|<f1>|-1"
@@ -70,6 +84,12 @@ shape = "record"
 ];
 "node0-2-2" [
 label = "<f0> x8000543c|-1"
+shape = "record"
+];
+
+
+"node0-2-0-0" [
+label = "<f0> x80003130|-1"
 shape = "record"
 ];
 
@@ -138,6 +158,16 @@ id = 0-1-0
 id = 0-1-1
 ];
 
+"node0-1-0":f1 -> "node0-1-0-0":f0 [
+id = 0-1-0-0
+];
+"node0-1-0":f2 -> "node0-1-0-1":f0 [
+id = 0-1-0-1
+];
+"node0-1-0":f3 -> "node0-1-0-2":f0 [
+id = 0-1-0-2
+];
+
 "node0-2":f1 -> "node0-2-0":f0 [
 id = 0-2-0
 ];
@@ -146,6 +176,10 @@ id = 0-2-1
 ];
 "node0-2":f3 -> "node0-2-2":f0 [
 id = 0-2-2
+];
+
+"node0-2-0":f1 -> "node0-2-0-0":f0 [
+id = 0-2-0-0
 ];
 
 "node0-5":f1 -> "node0-5-0":f0 [
