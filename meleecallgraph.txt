@@ -9,200 +9,317 @@ shape = "ellipse"
 ];
 edge [
 ];
-"node0" [
+//Boot to Pause freezes at this node
+"x8000522c" [
 label = "<f0> x8000522c_BootToPause|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>"
 shape = "record"
 ];
 
-"node0-0" [
-label = "<f0> x80005340|-1"
-shape = "record"
-];
-"node0-1" [
-label = "<f0> x8000541c|<f1>|<f2>|-1"
-shape = "record"
-];
-"node0-2" [
-label = "<f0> x8000535c|<f1>|<f2>|<f3>|-1"
-shape = "record"
-];
-"node0-3" [
-label = "<f0> x80335ec0|-1"
-shape = "record"
-];
-"node0-4" [
-label = "<f0> x80342fc8|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|<f19>|<f20>|<f21>|<f22>|<f23>|<f24>|<f25>|<f26>|<f27>|<f28>|<f29>|<f30>|<f31>|<f32>|<f33>|<f34>|<f35>|<f36>|<f37>|-1"
-shape = "record"
-];
-"node0-5" [
-label = "<f0> __check_pad3|<f1>|-1"
-shape = "record"
-];
-"node0-6" [
-label = "<f0> x8034cabc|<f1>|-1"
-shape = "record"
-];
-"node0-7" [
-label = "<f0> x8015feb4|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|<f19>|<f20>|-1"
-shape = "record"
-];
-"node0-8" [
-label = "<f0> x80322f9c_ExitCode?|<f1>|<f2>|<f3>|<f4>blr but no static \nlink found by dolphin?"
-shape = "record"
-];
+	//first level nodes
+	"x80005340" [
+	label = "<f0> x80005340|-1"
+	shape = "record"
+	];
+	
+	"x8000541c" [
+	label = "<f0> x8000541c|<f1>|<f2>|-1"
+	shape = "record"
+	];
+		"x803436d4_EntryPointForSettingHIDS?" [
+		label = "<f0> x803436d4_EntryPointForSettingHIDS?|<f1>Nested in function|<f2>body of|<f3>x803435e4|-1"
+		shape = "record"
+		];
+			"x80335ea8" [
+			label = "<f0> x80335ea8|-1"
+			shape = "record"
+			];
+			"x80335eb0" [
+			label = "<f0> x80335eb0|-1"
+			shape = "record"
+			];
+			"x804490c" [
+			label = "<f0> x804490c|-1"
+			shape = "record"
+			];
+		"x80344d3c" [
+		label = "<f0> x80344d3c|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|-1"
+		shape = "record"
+		];
 
-"node0-1-0" [
-label = "<f0> x803436d4_EntryPointForSettingHIDS?|<f1>Nested in function|<f2>body of|<f3>x803435e4|-1"
-shape = "record"
-];
-"node0-1-1" [
-label = "<f0> x80344d3c|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|-1"
-shape = "record"
-];
+	"x8000535c" [
+	label = "<f0> x8000535c|<f1>|<f2>|<f3>|-1"
+	shape = "record"
+	];	
+		"x80003100" [
+		label = "<f0> x80003100|<f1>|-1"
+		shape = "record"
+		];
+		"x800031f4" [
+		label = "<f0> x800031f4|-1"
+		shape = "record"
+		];
+		"x8000543c" [
+		label = "<f0> x8000543c|-1"
+		shape = "record"
+		];
+			"x80003130" [
+			label = "<f0> x80003130|-1"
+			shape = "record"
+			];
 
-"node0-1-0-0" [
-label = "<f0> x80335ea8|-1"
-shape = "record"
-];
-"node0-1-0-1" [
-label = "<f0> x80335eb0|-1"
-shape = "record"
-];
-"node0-1-0-2" [
-label = "<f0> x804490c|-1"
-shape = "record"
-];
+	"x80335ec0" [
+	label = "<f0> x80335ec0|-1"
+	shape = "record"
+	];
+	
+	"x80342fc8" [
+	label = "<f0> x80342fc8|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|<f19>|<f20>|<f21>|<f22>|<f23>|<f24>|<f25>|<f26>|<f27>|<f28>|<f29>|<f30>|<f31>|<f32>|<f33>|<f34>|<f35>|<f36>|<f37>|-1"
+	shape = "record"
+	];
+	
+	"__check_pad3" [
+	label = "<f0> __check_pad3|<f1>|-1"
+	shape = "record"
+	];
+		"x8034844c" [
+		label = "<f0> x8034844c|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|-1"
+		shape = "record"
+		];
+	
+	"x8034cabc" [
+	label = "<f0> x8034cabc|<f1>|-1"
+	shape = "record"
+	];
+		"x8034cadc" [
+		label = "<f0> x8034cadc|-1"
+		shape = "record"
+		];
+	
+	"x8015feb4" [
+	label = "<f0> x8015feb4|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|<f16>|<f17>|<f18>|<f19>|<f20>|-1"
+	shape = "record"
+	];
+		"x8000ad8c" [
+		label = "<f0> x8000ad8c|-1"
+		shape = "record"
+		];
+		"x8000adf4" [
+		label = "<f0> x8000adf4|<f1>|-1"
+		shape = "record"
+		];
+			"x8015cc58" [
+			label = "<f0> x8015cc58|-1"
+			shape = "record"
+			];
+		"x8000afbc" [
+		label = "<f0> x8000afbc|<f1>|<f2>|-1"
+		shape = "record"
+		];
+			"x80322a08" [
+			label = "<f0> x80322a08|-1"
+			shape = "record"
+			];
+			"x8034c3f0" [
+			label = "<f0> x8034c3f0|-1"
+			shape = "record"
+			];
+		"x80014d2c" [
+		label = "<f0> x80014d2c|-1"
+		shape = "record"
+		];
+		"x800154bc" [
+		label = "<f0> x800154bc|-1"
+		shape = "record"
+		];
+		"x8001564c" [
+		label = "<f0> x8001564c|<f1>|<f2>|<f3>|<f4>|-1"
+		shape = "record"
+		];
+			"x80014e24" [
+			label = "<f0> x80014e24|<f1>|-1"
+			shape = "record"
+			];
+				"x80388220" [
+				label = "<f0> x80388220|<f1>|<f2>|-1"
+				shape = "record"
+				];
+			"x80350dc0" [
+			label = "<f0> x80350dc0|<f1>|<f2>|-1"
+			shape = "record"
+			];
+				"x80347364" [
+				label = "<f0>x80347364|-1"
+				shape = "record"
+				];
+				"x8034738c" [
+				label = "<f0>x8034738c|-1"
+				shape = "record"
+				];
+			"x80350e28" [
+			label = "<f0> x80350e28|<f1>|<f2>|-1"
+			shape = "record"
+			];
+				//Links to the same nodes as x80350dc0 
+			"x80350f90" [
+			label = "<f0> x80350f90|-1"
+			shape = "record"
+			];	
+	
+	"x80322f9c_ExitCode?" [
+	label = "<f0> x80322f9c_ExitCode?|<f1>|<f2>|<f3>|<f4>blr but no static \nlink found by dolphin?"
+	shape = "record"
+	];
+		"x80322714" [
+		label = "<f0> x80322714|-1"
+		shape = "record"
+		];
+		"x8032355c" [
+		label = "<f0> x8032355c|-1"
+		shape = "record"
+		];
+		"x8034cb30" [
+		label = "<f0> x8034cb30|<f1>|-1"
+		shape = "record"
+		];
+			"x80335e94" [
+			label = "<f0> x80335e94|-1"
+			shape = "record"
+			];
 
 
-"node0-2-0" [
-label = "<f0> x80003100|<f1>|-1"
-shape = "record"
-];
-"node0-2-1" [
-label = "<f0> x800031f4|-1"
-shape = "record"
-];
-"node0-2-2" [
-label = "<f0> x8000543c|-1"
-shape = "record"
-];
-
-
-"node0-2-0-0" [
-label = "<f0> x80003130|-1"
-shape = "record"
-];
-
-"node0-5-0" [
-label = "<f0> x8034844c|<f1>|<f2>|<f3>|<f4>|<f5>|<f6>|<f7>|<f8>|<f9>|<f10>|<f11>|<f12>|<f13>|<f14>|<f15>|-1"
-shape = "record"
-];
-
-"node0-6-0" [
-label = "<f0> x8034cadc|-1"
-shape = "record"
-];
-
-"node0-8-0" [
-label = "<f0> x80322714|-1"
-shape = "record"
-];
-"node0-8-1" [
-label = "<f0> x8032355c|-1"
-shape = "record"
-];
-"node0-8-2" [
-label = "<f0> x8034cb30|<f1>|-1"
-shape = "record"
-];
-
-"node0-8-2-0" [
-label = "<f0> x80335e94|-1"
-shape = "record"
-];
-
-
-
-"node0":f0 -> "node0-0":f0 [
+//Linking Code
+"x8000522c":f0 -> "x80005340":f0 [
 id = 0-0
 ];
-"node0":f1 -> "node0-1":f0 [
+
+"x8000522c":f1 -> "x8000541c":f0 [
 id = 0-1
 ];
-"node0":f2 -> "node0-2":f0 [
+	"x8000541c":f1 -> "x803436d4_EntryPointForSettingHIDS?":f0 [
+	id = 0-1-0
+	];
+		"x803436d4_EntryPointForSettingHIDS?":f1 -> "x80335ea8":f0 [
+		id = 0-1-0-0
+		];
+		"x803436d4_EntryPointForSettingHIDS?":f2 -> "x80335eb0":f0 [
+		id = 0-1-0-1
+		];
+		"x803436d4_EntryPointForSettingHIDS?":f3 -> "x804490c":f0 [
+		id = 0-1-0-2
+		];
+	"x8000541c":f2 -> "x80344d3c":f0 [
+	id = 0-1-1
+	];
+		
+"x8000522c":f2 -> "x8000535c":f0 [
 id = 0-2
 ];
-"node0":f3 -> "node0-3":f0 [
+	"x8000535c":f1 -> "x80003100":f0 [
+	id = 0-2-0
+	];
+		"x80003100":f1 -> "x80003130":f0 [
+		id = 0-2-0-0
+		];
+	"x8000535c":f2 -> "x800031f4":f0 [
+	id = 0-2-1
+	];
+	"x8000535c":f3 -> "x8000543c":f0 [
+	id = 0-2-2
+	];
+	
+"x8000522c":f3 -> "x80335ec0":f0 [
 id = 0-3
 ];
-"node0":f4 -> "node0-4":f0 [
+
+"x8000522c":f4 -> "x80342fc8":f0 [
 id = 0-4
 ];
-"node0":f5 -> "node0-5":f0 [
+
+"x8000522c":f5 -> "__check_pad3":f0 [
 id = 0-5
 ];
-"node0":f6 -> "node0-6":f0 [
+	"__check_pad3":f1 -> "x8034844c":f0 [
+	id = 0-5-0
+	];
+	
+"x8000522c":f6 -> "x8034cabc":f0 [
 id = 0-6
 ];
-"node0":f7 -> "node0-7":f0 [
+	"x8034cabc":f1 -> "x8034cadc":f0 [
+	id = 0-6-0
+	];
+	
+"x8000522c":f7 -> "x8015feb4":f0 [
 id = 0-7
 ];
-"node0":f8 -> "node0-8":f0 [
+	"x8015feb4":f1 -> "x8000ad8c":f0 [
+	id = 0-7-0
+	];
+	"x8015feb4":f2 -> "x8000adf4":f0 [
+	id = 0-7-1
+	];
+		"x8000adf4":f1 -> "x8015cc58":f0 [
+		id = 0-7-1-0
+		];
+	"x8015feb4":f3 -> "x8000afbc":f0 [
+	id = 0-7-2
+	];
+		"x8000afbc":f1 -> "x80322a08":f0 [
+		id = 0-7-2-0
+		];
+		"x8000afbc":f2 -> "x8034c3f0":f0 [
+		id = 0-7-2-1
+		];
+	"x8015feb4":f4 -> "x80014d2c":f0 [
+	id = 0-7-3
+	];
+	"x8015feb4":f5 -> "x800154bc":f0 [
+	id = 0-7-4
+	];
+	"x8015feb4":f6 -> "x8001564c":f0 [
+	id = 0-7-5
+	];
+		"x8001564c":f1 -> "x80014e24":f0 [
+		id = 0-7-5-0
+		];
+			"x80014e24":f1 -> "x80388220":f0 [
+			id = 0-7-5-0-0
+			];
+		"x8001564c":f2 -> "x80350dc0":f0 [
+		id = 0-7-5-1
+		];
+			"x80350dc0":f1 -> "x80347364":f0 [
+			id = 0-7-5-1-0
+			];
+			"x80350dc0":f2 -> "x8034738c":f0 [
+			id = 0-7-5-1-1
+			];
+		"x8001564c":f3 -> "x80350e28":f0 [
+		id = 0-7-5-2
+		];
+			"x80350e28":f1 -> "x80347364":f0 [
+			id = 0-7-5-2-0
+			];
+			"x80350e28":f2 -> "x8034738c":f0 [
+			id = 0-7-5-2-1
+			];
+		"x8001564c":f4 -> "x80350f90":f0 [
+		id = 0-7-5-3
+		];
+
+"x8000522c":f8 -> "x80322f9c_ExitCode?":f0 [
 id = 0-8
 ];
-
-"node0-1":f1 -> "node0-1-0":f0 [
-id = 0-1-0
-];
-"node0-1":f2 -> "node0-1-1":f0 [
-id = 0-1-1
-];
-
-"node0-1-0":f1 -> "node0-1-0-0":f0 [
-id = 0-1-0-0
-];
-"node0-1-0":f2 -> "node0-1-0-1":f0 [
-id = 0-1-0-1
-];
-"node0-1-0":f3 -> "node0-1-0-2":f0 [
-id = 0-1-0-2
-];
-
-"node0-2":f1 -> "node0-2-0":f0 [
-id = 0-2-0
-];
-"node0-2":f2 -> "node0-2-1":f0 [
-id = 0-2-1
-];
-"node0-2":f3 -> "node0-2-2":f0 [
-id = 0-2-2
-];
-
-"node0-2-0":f1 -> "node0-2-0-0":f0 [
-id = 0-2-0-0
-];
-
-"node0-5":f1 -> "node0-5-0":f0 [
-id = 0-5-0
-];
-
-"node0-6":f1 -> "node0-6-0":f0 [
-id = 0-6-0
-];
-
-
-"node0-8":f1 -> "node0-8-0":f0 [
-id = 0-8-0
-];
-"node0-8":f2 -> "node0-8-1":f0 [
-id = 0-8-1
-];
-"node0-8":f3 -> "node0-8-2":f0 [
-id = 0-8-2
-];
-
-"node0-8-2":f1 -> "node0-8-2-0":f0 [
-id = 0-8-2-0
-];
-
+	"x80322f9c_ExitCode?":f1 -> "x80322714":f0 [
+	id = 0-8-0
+	];
+	"x80322f9c_ExitCode?":f2 -> "x8032355c":f0 [
+	id = 0-8-1
+	];
+	"x80322f9c_ExitCode?":f3 -> "x8034cb30":f0 [
+	id = 0-8-2
+	];
+		"x8034cb30":f1 -> "x80335e94":f0 [
+		id = 0-8-2-0
+		];
 }
